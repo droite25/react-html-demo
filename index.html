@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>わんこギャラリー</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🐶 ランダムわんこ画像ギャラリー</h1>
+
+    <div class="button-row">
+      <!-- JSボタン -->
+      <div class="box">
+        <h2>JavaScript版</h2>
+        <button id="fetch-btn">画像を取得（JS）</button>
+        <div id="dog-image-area">
+          <p>画像がここに表示されます</p>
+        </div>
+      </div>
+
+      <!-- Reactボタン -->
+      <div class="box">
+        <h2>React版</h2>
+        <div id="react-root"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- React コンポーネント -->
+  <script type="text/babel" src="react-button.js"></script>
+</body>
+</html>
